@@ -11,7 +11,7 @@ class Header extends Component {
     return (
       <>
         <div>Header</div>
-        <Link to="/wizard">
+        <Link to="/wizard/step1">
           <button>Add New Property</button>
         </Link>
       </>

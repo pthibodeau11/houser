@@ -19,5 +19,8 @@ massive(CONNECTION_STRING)
 app.use(express.json());
 
 // ENDPOINTS GO HERE
+app.get("/api/listings", controller.getHouses);
+app.post("/api/house", controller.createHouse);
+app.delete("/api/house/:id", controller.deleteHouse);
 
 app.listen(PORT, () => console.log(`server is listening on port: ${PORT}`));
